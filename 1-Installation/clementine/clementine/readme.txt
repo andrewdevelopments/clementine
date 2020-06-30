@@ -1,0 +1,1 @@
+The full documentation can be found in '2-Documentation' folder located inside the download package.

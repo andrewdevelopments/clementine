@@ -1,0 +1,37 @@
+a, .btn, button, input[type="submit"] {
+	color: $black;
+	text-decoration: none;
+	@include transition(all 200ms);
+}
+a {
+	strong, span, em, p {
+		@include transition(all 200ms);
+	}
+}
+.btn, button, input[type="submit"] {
+	padding: 5px 20px;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-size: 12px;
+	background: none;
+	color: $black;
+	text-transform: uppercase;
+	@include radius(3px);
+	&:hover {
+		background: $hovercolor;
+		color: #fff;
+	}
+	&.button {
+		color: #fff;
+		background: $color;
+		&:hover {
+			background: $hovercolor;
+		}
+	}
+}
+input[type="submit"] {
+	border: none;
+	background: $color;
+	color: #fff;
+	@include radius(0);
+}

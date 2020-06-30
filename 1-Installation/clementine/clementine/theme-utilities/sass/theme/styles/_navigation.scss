@@ -1,0 +1,180 @@
+.navbar, .top-menu {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		> li {
+			display: inline-block;
+			margin: 0 25px;
+			padding: 20px 0;
+			position: relative;
+			a {
+				display: block;
+				font-size: 13px;
+				text-transform: uppercase;
+				color: $black;
+				&:hover {
+					color: $color;
+				}
+			}
+			ul {
+				position: absolute;
+				visibility: hidden;
+				list-style-type: none;
+				margin: 0;
+				top: 100%;
+				left: 50%;
+				text-align: left;
+				padding: 0 10px;
+				background: $black;
+				z-index: 1000;
+				min-width: 190px;
+				@include opacity(0);
+				@include transition(all 300ms);
+				@include transform(translateX(-50%) translateY(10%));
+				> li {
+					display: block;
+					position: relative;
+					margin: 0;
+					padding: 0;
+					a {
+						padding: 10px;
+						color: #fff;
+						white-space: nowrap;
+						font-size: 11px;
+						border-bottom: 1px solid #222;
+						&:hover {
+							color: $color;
+						}
+					}
+
+					&:last-child a {
+						border-bottom: none;
+					}
+					> ul, > ul.sub-menu {
+						visibility: hidden;
+						margin: 0;
+						list-style-type: none;
+						background: $black;
+						z-index: 1000;
+						text-align: left;
+						padding: 0 15px;
+						left: 105%;
+						top: 0;
+						position: absolute;
+						@include opacity(0);
+						@include transition(all 300ms);
+						@include transform(translateX(10%));
+						li:last-child a {
+							border-bottom: none;
+						}
+					}
+					&:hover {
+						> a {
+							color: $color;
+						}
+						ul, ul.sub-menu {
+							visibility: visible;
+							@include opacity(1);
+							@include transform(translateX(0));
+						}
+					}
+				}
+			}
+			&:hover {
+				> a {
+					color: $color;
+				}
+				> ul.children, > ul.sub-menu {
+					visibility: visible;
+					@include opacity(1);
+					@include transform(translateX(-50%) translateY(0));
+				}
+			}
+		}
+	}
+	&.navbar-mobile {
+		display: none;
+		margin-top: 20px;
+		padding: 0 15px;
+		> ul, > div > ul {
+			> li {
+				display: block;
+				margin: 0;
+				padding: 7px 0;
+				ul {
+					position: relative;
+					visibility: visible;
+					left: 0;
+					width: 100%;
+					background: none;
+					@include opacity(1);
+					@include transform(none);
+					li {
+						a {
+							color: $black;
+							border-color: #eee;
+						}
+					}
+					li {
+						ul {
+							position: relative;
+							visibility: visible;
+							left: 0;
+							width: 100%;
+							background: none;
+							padding: 0 30px;
+							@include opacity(1);
+							@include transform(none);
+							li {
+								a {
+									color: $black;
+									border-bottom: 1px solid #eee;
+								}
+								&:last-child {
+									a {
+										border-bottom: 1px solid #eee;
+									}
+								}
+							}
+						}
+					}
+					&:hover ul {
+						@include transform(none);
+					}
+				}
+				&:hover ul {
+					@include transform(none);
+				}
+			}
+		}
+		#searchform {
+			margin-top: 15px;
+			position: relative;
+			input {
+				width: 100%;
+			}
+			button {
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				border: none;
+				background: $black;
+				color: #fff;
+				@include radius(0);
+			}
+		}
+	}
+}
+.top-menu {
+	ul {
+		li {
+			padding: 0;
+			margin: 0 10px;
+			a {
+				font-size: 11px;
+			}
+		}
+	}
+}

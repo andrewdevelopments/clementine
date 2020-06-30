@@ -1,0 +1,51 @@
+$gutter-width: 30px;
+$grid-columns: 12;
+
+// Screens
+$xtra-small-screen: 480px;
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+
+// Column values
+$column12: 100%;
+$column11: 91.66666667%;
+$column10: 83.33333333%;
+$column9: 75%;
+$column8: 66.66666667%;
+$column7: 58.33333333%;
+$column6: 50%;
+$column5: 41.66666667%;
+$column4: 33.33333333%;
+$column3: 25%;
+$column2: 16.66666667%;
+$column1: 8.33333333%;
+
+// Small screen / tablet
+$container-tablet: ((720px + $gutter-width)) !default;
+
+// Medium screen / desktop
+$container-desktop: ((940px + $gutter-width)) !default;
+
+// Large screen / wide
+$container-large: ((1140px + $gutter-width)) !default;
+
+$h1: 40px;
+$h2: 30px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+$h6: 14px;
+$body-size: 13px;
+$line-height: 24px;
+$font-family: 'Libre Baskerville', sans-serif;
+$body-family: 'Montserrat', sans-serif;
+$button-font: 'Montserrat', sans-serif;
+
+// Colors
+$light: #fff;
+$black: #171717;
+$grey: #87909b;
+$light-grey: #ccc;
+$color: #FCA90F;
+$hovercolor: #FAC76A;

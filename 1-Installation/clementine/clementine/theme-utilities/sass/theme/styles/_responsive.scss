@@ -1,0 +1,177 @@
+
+@media screen and (max-width: 1200px) {
+	.widget_widget_facebook iframe#facebook {
+		width: 100% !important;
+	}
+	.single article .post-gallery img {
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 991px) {
+	header.header {
+		padding: 20px 10px;
+	}
+	header.header .c-9 {
+		text-align: right;
+	}
+	.menu-trigger {
+		display: inline-block;
+	}
+	.navbar, .top-bar {
+		display: none;
+	}
+}
+@media screen and (max-width: 768px) {
+	.masonry {
+		height: auto !important;
+		.block {
+			position: relative !important;
+			top: auto !important;
+			left: auto !important;
+		}
+	}
+	header.header {
+		.c-3 {
+			width: 25%;
+		}
+		.c-9 {
+			width: 75%;
+		}
+	}
+	.pagination {
+		margin-bottom: 60px;
+	}
+	.widget_widget_posts {
+		.c-8 {
+			padding-left: 15px;
+		}
+		li {
+			display: block;
+		}
+		.post-title {
+			text-align: center;
+			margin-top: 15px;
+			a {
+				font-size: 24px;
+			}
+		}
+		.post-meta {
+			text-align: center;
+		}
+	}
+	article {
+		.entry-footer {
+			.post-permalink {
+				> div {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+	.grid {
+		article {
+			.entry-content {
+				text-align: center;
+			}
+			.entry-footer {
+				.post-permalink {
+					display: block;
+					> div {
+						text-align: center;
+						.read-more {
+							margin-bottom: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.single {
+		article {
+			.entry-content {
+				padding: 20px;
+				figure[id*="post-"] {
+					margin-left: -20px;
+					width: calc(100% + 40px);
+				}
+			}
+		}
+	}
+	.post-author > .valign {
+		display: block;
+		> div {
+			text-align: center;
+			.author-information {
+				margin-top: 20px;
+			}
+		}
+	}
+	.related-posts {
+		article {
+			margin-bottom: 30px;
+		}
+	}
+	.post-sharing {
+		a {
+			margin: 7px;
+			&:first-child {
+				margin-left: 7px;
+			}
+		}
+	}
+	.related-posts, .page .main .entry-content {
+		padding: 20px;
+	}
+	.copyright > div > div {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 600px) {
+	article {
+		.entry-content {
+			padding: 20px;
+		}
+		.post-title {
+			padding: 20px 20px 0 20px;
+		}
+		.entry-footer {
+			padding: 0 20px 20px;
+			.post-permalink {
+				display: block;
+				> div {
+					text-align: center;
+					.read-more {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	.post-sharing {
+		text-align: center;
+		a {
+			display: block;
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	header.header {
+		.valign {
+			display: block;
+			.c-3, .c-9 {
+				text-align: center;
+				width: 100%;
+			}
+		}
+		.menu-trigger {
+			margin-top: 20px;
+		}
+	}
+}
+@media screen and (max-width: 360px) {
+	body {
+		overflow-x: hidden;
+	}
+}

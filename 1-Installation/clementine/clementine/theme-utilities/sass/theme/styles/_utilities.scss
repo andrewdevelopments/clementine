@@ -1,0 +1,42 @@
+*:hover, *:focus {
+	outline: 0;
+}
+.nomargin {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+.nopadding {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+ul.default {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.img-responsive, .responsive {
+	width: 100%;
+	height: auto;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+.valign {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	-webkit-align-items: center;
+}

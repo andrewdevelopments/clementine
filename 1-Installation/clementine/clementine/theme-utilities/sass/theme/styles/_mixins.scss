@@ -1,0 +1,51 @@
+// Construct @mixins for Grid
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin fix-container($gutter: $gutter-width) {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:  ($gutter / 2);
+	padding-right: ($gutter / 2);
+  @include transition(all 250ms);
+}
+@mixin column($gutter: $gutter-width) {
+  margin-left:  ($gutter / -2);
+  margin-right: ($gutter / -2);
+  @include clearfix();
+}
+@mixin transition($a) {
+  -moz-transition: $a;
+  -o-transition: $a;
+  -webkit-transition: $a;
+  transition: $a;
+}
+@mixin transform($prop) {
+  -webkit-transform: $prop;
+  -ms-transform: $prop;
+  -moz-transform: $prop;
+  transform: $prop;
+}
+@mixin opacity($prop) {
+  opacity: $prop;
+  -khtml-opacity: $prop;
+  -moz-opacity: $prop;
+}
+@mixin radius($prop) {
+  -webkit-border-radius: $prop; 
+  -moz-border-radius: $prop; 
+  border-radius: $prop; 
+}
+@mixin shadow($prop) {
+  -moz-box-shadow: $prop;
+  -webkit-box-shadow: $prop;
+  box-shadow: $prop;
+}

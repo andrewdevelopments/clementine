@@ -1,0 +1,25 @@
+.adD_meta-option {
+	margin-bottom: 15px;
+}
+.adD_meta-option input {
+	width: 50%;
+	padding: 7px;
+}
+.adD_meta-option input[type="radio"], .adD_meta-option input[type="checkbox"] {
+	width: auto;
+	padding: 0;
+}
+.adD_meta-option.padding {
+	padding: 20px 0;
+}
+.adD_meta-option textarea {
+	width: 50%;
+	height: 80px;
+}
+.adD_meta-option > p {
+	margin-bottom: 4px;
+}
+#search-map {
+	height: 35px;
+	margin-top: 1px;
+}
